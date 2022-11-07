@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="360.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.uacm.aycs.controlador.LocalizarController">
+   <children>
+      <Label layoutX="83.0" layoutY="50.0" text="Localizar paciente.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="104.0" text="Ingrese  el número de seguro " />
+      <Label layoutX="111.0" layoutY="135.0" text="Del paciente para localizar" />
+      <TextField fx:id="campoNumSeguro" layoutX="107.0" layoutY="180.0" />
+      <Button layoutX="147.0" layoutY="225.0" mnemonicParsing="false" onAction="#buscar" text="Continuar" />
+      <Button layoutX="150.0" layoutY="274.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+   </children>
+</AnchorPane>

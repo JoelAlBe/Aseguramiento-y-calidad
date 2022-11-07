@@ -1,0 +1,5 @@
+module-info.class
+com\uacm\aycs\clases\conexionBD.class
+com\uacm\aycs\modelo\Receta.class
+com\uacm\aycs\controlador\App.class
+com\uacm\aycs\controlador\SystemInfo.class

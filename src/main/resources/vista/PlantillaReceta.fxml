@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.aycs.controlador.PlantillaRecetaController">
+   <children>
+      <Label layoutX="14.0" layoutY="33.0" text="Receta medica">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="91.0" text="Dra. Jennifer Sánchez Medico general. Ced. Prof. 2811">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="108.0" text="Universidad Autonoma de la Ciudad de México.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="125.0" text="Homun No. 1107, Col. Heroes de Padierna, CDMX, Tlalpan. Tel.  28109811">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="167.0" text="Fecha:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fecha" layoutX="418.0" layoutY="167.0" promptText="dd/mm/aaaa" />
+      <Label layoutX="17.0" layoutY="208.0" text="Nombre del paciente:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombrePaciente" layoutX="157.0" layoutY="206.0" prefHeight="25.0" prefWidth="412.0" />
+      <Label layoutX="15.0" layoutY="254.0" text="Edad:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="edad" layoutX="53.0" layoutY="252.0" prefHeight="25.0" prefWidth="96.0" promptText="número" />
+      <Label layoutX="169.0" layoutY="255.0" text="Peso: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="peso" layoutX="216.0" layoutY="252.0" prefHeight="25.0" prefWidth="96.0" promptText="Kilogramos" />
+      <Label layoutX="337.0" layoutY="255.0" text="Talla:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="talla" layoutX="381.0" layoutY="252.0" prefHeight="25.0" prefWidth="96.0" promptText="CM" />
+      <Label layoutX="16.0" layoutY="312.0" text="Temperatura: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="temperatura" layoutX="119.0" layoutY="310.0" prefHeight="25.0" prefWidth="125.0" promptText="Grados centigrados" />
+      <Label layoutX="275.0" layoutY="313.0" text="Ta:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="presion" layoutX="300.0" layoutY="311.0" prefHeight="25.0" prefWidth="86.0" promptText="mmHg" />
+      <Label layoutX="21.0" layoutY="368.0" text="Alergias:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="alergias" layoutX="89.0" layoutY="368.0" prefHeight="120.0" prefWidth="498.0" />
+      <Label layoutX="48.0" layoutY="515.0" text="Rx: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="medicamentos" layoutX="89.0" layoutY="515.0" prefHeight="131.0" prefWidth="498.0" />
+      <Label layoutX="20.0" layoutY="695.0" text="Firma del medico: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="697.0" text="________________________________________________________________" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="605.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Archivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#guardarReceta" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarVentana" text="Cerrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Editar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#limpiarCampos" text="Limpiar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarInfo" text="Sobre el programa" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="411.0" layoutY="313.0" text="Sexo: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sexo" layoutX="448.0" layoutY="311.0" prefHeight="25.0" prefWidth="134.0" />
+   </children>
+</AnchorPane>
